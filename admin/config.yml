@@ -5,6 +5,8 @@ backend:
 media_folder: "public/images"
 public_folder: "/images"
 
+site_url: "https://noor-hijab.vercel.app"
+
 collections:
   - name: "products"
     label: "Products"
