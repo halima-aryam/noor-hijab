@@ -308,6 +308,12 @@ footer{background:var(--cream);border-top:1px solid var(--line);padding:2.5rem;t
 
 <!-- STORE -->
 <div class="store-strip" id="store">
+    <!-- LIPA BANNER -->
+<div style="background:#e8f5e9;padding:1rem 2rem;text-align:center;border-top:1px solid #c8e6c9;">
+  <p style="font-family:'Jost',sans-serif;font-size:0.82rem;letter-spacing:0.08em;color:#2c6e49;">
+    📱 Lipa kwa <strong>Tigo Pesa</strong> &nbsp;·&nbsp; Namba: <strong>9050554</strong> &nbsp;·&nbsp; Jina: <strong>Noor Hijab</strong>
+  </p>
+</div>
   <div class="store-item"><span class="store-item-label">Location</span><span class="store-item-value">3 Sekenke St, Kinondoni Manyanya</span></div>
   <div class="store-item"><span class="store-item-label">Hours</span><span class="store-item-value">Mon – Sat · 9:00 AM – 6:00 PM</span></div>
   <div class="store-item"><span class="store-item-label">WhatsApp</span><span class="store-item-value">+255 659 465 675</span></div>
@@ -495,7 +501,7 @@ function orderViaWhatsApp() {
     msg += `   Idadi: ${item.qty}\n`;
     msg += `   Bei: TZS ${(item.price*item.qty).toLocaleString()}\n\n`;
   });
-  msg += `*Jumla: TZS ${total.toLocaleString()}*\n\nTafadhali niambie upatikanaji na uwasilishaji. Shukran! 🌸`;
+ msg += `*Jumla: TZS ${total.toLocaleString()}*\n\n💳 *Lipa kwa Tigo Pesa:* 9050554\n\nTafadhali niambie upatikanaji na uwasilishaji. Shukran! 🌸`;
   window.open(`https://wa.me/${PHONE}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
