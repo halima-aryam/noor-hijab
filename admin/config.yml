@@ -1,0 +1,28 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "public/images"
+public_folder: "/images"
+
+collections:
+  - name: "products"
+    label: "Products"
+    folder: "content/products"
+    create: true
+    slug: "{{slug}}"
+    format: "json"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Price (TZS)", name: "price", widget: "number" }
+      - label: "Category"
+        name: "category"
+        widget: "select"
+        options:
+          - { label: "Abaya", value: "abaya" }
+          - { label: "Khimar", value: "khimar" }
+          - { label: "Dress", value: "dress" }
+      - { label: "Colour / Variant", name: "variant", widget: "string" }
+      - { label: "Featured Image", name: "image", widget: "image" }
+      - { label: "Description", name: "description", widget: "text" }
+      - { label: "Badge (e.g. New, Popular)", name: "badge", widget: "string", required: false }
