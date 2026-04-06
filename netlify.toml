@@ -1,7 +1,8 @@
 [build]
   publish = "."
+  command = "node build.js"
 
 [[redirects]]
   from = "/images/*"
   to = "/public/images/:splat"
-  status = 200 
+  status = 200
