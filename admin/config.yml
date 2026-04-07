@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
+  name: github
+  repo: halima-aryam/noor-hijab
   branch: main
+  base_url: https://noor-hijab.vercel.app
+  auth_endpoint: api/auth
 
 media_folder: "public/images"
 public_folder: "/images"
